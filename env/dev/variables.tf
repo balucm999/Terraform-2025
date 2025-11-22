@@ -1,29 +1,29 @@
 variable "region" {
-    type = string
+  type = string
 }
 variable "name" {
-    type = string
+  type = string
 }
 variable "availability_zones" {
-    type = list(string)
+  type = list(string)
 }
 variable "cidr_block" {
-    type = string
+  type = string
 }
 variable "private_subnets" {
-    type = list(string)
+  type = list(string)
 }
 variable "public_subnets" {
-    type = list(string)
+  type = list(string)
 }
 variable "name_bastion" {
-    type = string  
+  type = string
 }
 variable "instance_type" {
-    type = string
+  type = string
 }
 variable "key_name" {
-    type = string
+  type = string
 }
 variable "assign_public_ip_bastion" {
   type    = bool
@@ -35,5 +35,5 @@ variable "assign_public_ip_private_ec2" {
   default = false
 }
 variable "name_ec2" {
-    type =string
+  type = string
 }
